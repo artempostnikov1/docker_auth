@@ -1,0 +1,6 @@
+#!/bin/bash
+
+CURRENT_USER=$(whoami)
+echo $CURRENT_USER
+curl localhost:5000?user=$CURRENT_USER \
+-H "Authorization: some-rnd-string"

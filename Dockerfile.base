@@ -1,0 +1,6 @@
+FROM atlassian/ssh-ubuntu
+
+RUN usermod -s /bin/bash nobody
+RUN usermod -d /home/nobody nobody
+
+RUN service sshd start
